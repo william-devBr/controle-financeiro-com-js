@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+ 
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding:10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+}
+.saldo-atual {
+   float:right;
+}
+.saldo {
+    
+}
+.total {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    text-align: center;
+}
+.total span {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.total div {
+  margin:5px 10px;
+}
+
+.receitas {
+    padding-right: 10px;
+    color: rgb(69, 171, 28);
+}
+.despesas {
+    padding-right: 10px;
+    color: rgb(228, 102, 102) ;
+}
+.mt-15 {
+    margin-top:15px;
+}
+.transacao-nome {
+    min-width: 100px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.valor {
+    box-sizing: border-box;
+    text-align: end;
+    justify-content: end;
+    font-size: 14px;
+    width: 100%;
+}
+.entrada {
+    border-right: 3px solid rgb(69, 171, 28);
+}
+.saida {
+    border-right: 3px solid lightcoral;
+}
+form {
+    box-sizing: border-box;
+    margin: 20px 0px;
+}
+form input {
+    width: 96%;
+    padding:8px;
+    margin: 10px 0px;
+}
+form button {
+    width: 100%;
+    padding: 8px;
+    border:1px solid #ccc;
+    background-color: lightslategray;
+    color:#fff;
+    cursor:pointer;
+}
+.remove-transaction {
+    width: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 8px;
+    padding:3px;
+    background-color: #f25;
+    color: #fff;
+    margin-right: 8px;
+    cursor:pointer;
+}
+#total-balance {
+    color:blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}

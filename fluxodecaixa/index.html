@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de caixa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Controle financeiro</h2>
+        <hr>
+      <div class="mt-15">
+            <h4>Saldo</h4>
+            <div id="total-balance"></div>
+     </div>
+    <div class="block mt-15">
+        <div class="saldo">
+            <div class="total">
+               <div>
+                <span>receitas</span>
+                <div class="receitas"></div>
+             </div>
+               <div>
+                <span>despesas </span>
+                 <div class="despesas"></div>
+                </div>
+                <div>
+                   
+                </div>
+                <div>
+                    <span>Mês referência </span>
+                     <div class="mes"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="mt-15">
+        
+        <h4>Transações</h4>
+        <hr>
+        <div class="mt-15" id="transacoes">
+            
+           
+        </div>
+        
+    </div>
+    <div class="mt-15">
+        <h4>adicionar transação</h4>
+        <hr>
+        <form id="form" action="" method="POST">
+        <div>
+            <label for="nome">nome</label>
+            <input type="text" name="nome" id="nome" placeholder="nome da transação">
+        </div>
+        <div>
+            <label for="valor">valor</label>
+            <small>(para saída insira o sinal "-" a frente do valor)</small>
+            <input type="text" name="valor" id="valor" placeholder="valor da transação">
+        </div>
+        <div>
+            <button type="submit">salvar</button>
+        </div>
+    </form>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body> 
+</html>
