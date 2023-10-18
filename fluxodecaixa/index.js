@@ -94,9 +94,11 @@ const submitHandle = event => {
 form.addEventListener('submit',submitHandle);
 
 inputName.addEventListener('input',()=>{
-    return inputName.value = inputName.value.replace(/[^a-zA-Z ]/,'')
+    //permite apenas letras , espaços e letras com caracteres
+    return inputName.value = inputName.value.replace(/[^a-zA-Z\u00C0-\u017F\s]/g, '')
 })
 
 inputValor.addEventListener('input',()=>{
-    return inputValor.value = inputValor.value.replace(/[^\d.,]/g,'')
+    //permite apenas numeros e ponto e vírgula
+    return inputValor.value = inputValor.value.replace(/[^\d.,-]/g,'').replace(",",".")
 })
